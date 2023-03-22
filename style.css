@@ -17,7 +17,6 @@ header {
     padding-bottom: 40px;
     padding-top: 18px;
     margin-top: -20px;
-    border-bottom: black 1px solid;
 }
 
 h2 {
@@ -32,6 +31,19 @@ nav {
     font-weight: 100;
 }
 
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 footer {
     background-color: #242B64;
     text-align: center;
@@ -39,7 +51,7 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: smaller;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
 }
 
 main {

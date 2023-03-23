@@ -44,6 +44,10 @@ li:not(:last-child) {
     margin-bottom: 10px;
 }
 
+iframe {
+    align-content: center;
+}
+
 footer {
     background-color: #242B64;
     text-align: center;

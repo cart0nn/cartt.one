@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'icomoon';
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+    }
+    html {
+        font-family: system-ui, sans-serif;
+        background: #13151a;
+        background-size: 224px;
+    }
+    :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+                45deg,
+                rgb(var(--accent)),
+                rgb(var(--accent-light)) 30%,
+                white 60%
+        );
+    }
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+
+}

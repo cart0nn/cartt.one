@@ -1,0 +1,20 @@
+---
+import '../styles/tailwind.css';
+import GithubIcon from '../components/GithubIcon.tsx'
+import LinkedinIcon from '../components/LinkedinIcon.tsx'
+---
+
+<nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+        <a href="/" class="text-white text-lg font-bold">
+            <img src="/cat.jpg" alt="cat" class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10" />
+        </a>
+        <ul class="flex space-x-4">
+            <li><a href="/resume" class="text-white hover:text-gray-400">Resume</a></li>
+            <li><a href="/music" class="text-white hover:text-gray-400">Music</a></li>
+            <li><a href="/projects" class="text-white hover:text-gray-400">Projects</a></li>
+            <li><GithubIcon /></li>
+            <li><LinkedinIcon /></li>
+        </ul>
+    </div>
+</nav>

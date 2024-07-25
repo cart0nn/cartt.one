@@ -1,35 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import '../styles/tailwind.css'
-import { SlSocialLinkedin } from "react-icons/sl";
-import { SlSocialGithub } from "react-icons/sl";
-
+import GithubIcon from '../components/GithubIcon.tsx'
+import LinkedinIcon from '../components/LinkedinIcon.tsx'
 ---
 
 <Layout title="Carson Smith">
 	<main>
 		<div class="flex justify-center items-center h-screen">
-			<div class="container mx-auto">
-				<div class="mx-auto">
-					<div class="flex justify-center items-center">
-						<img src="/cat.jpg" alt="Cat" class="content-center"></img>
-					</div>
-					<h1 class="text-6xl font-bold text-center text-white my-10">Carson Smith</h1>
-					<div class="text-3xl italic text-center text-blue-100 mb-3">
-						"Hello, can code."
-					</div>
-					<div class="flex justify-center items-center">
-						<nav class="flex justify-center mx-3 items-center">
-							<div class="text-blue-300 font-bold text-xl hover:text-blue-500 transition-colors duration-200">
-								<a href="./"Resume
-							</div>
-
-						</nav>
-					</div>
+			<div class="container max-h-full max-w-4xl p-10 mx-auto">
+				<div class="flex flex-col justify-center items-center">
+					<img src="/cat.jpg" alt="Cat" class="content-center w-1/2 h-auto mb-6"></img>
+				</div>
+				<h1 class="text-4xl md:text-6xl font-bold text-center text-white mb-3">Carson Smith</h1>
+				<div class="text-xl md:text-3xl italic text-center text-blue-100 mb-3">
+					"Me when the uhhh... when the uh... the uh... the..."
+				</div>
+				<div class="flex flex-col justify-center items-center mb-3">
+					<nav class="space-x-4 flex justify-center mx-3 items-center">
+						<a href="/resume" class="text-blue-300 text-lg md:text-xl hover:text-blue-500 transition-colors duration-200">Resume</a>
+						<a href="/music" class="text-blue-300 text-lg md:text-xl hover:text-blue-500 transition-colors duration-200">Music</a>
+						<a href="/projects" class="text-blue-300 text-lg md:text-xl hover:text-blue-500 transition-colors duration-200">Projects</a>
+					</nav>
+				</div>
+				<div class="flex flex-row justify-center items-center space-x-7">
+					<GithubIcon />
+					<LinkedinIcon />
 				</div>
 			</div>
 		</div>
-
 	</main>
 </Layout>

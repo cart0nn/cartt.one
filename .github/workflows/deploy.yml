@@ -41,7 +41,7 @@ jobs:
           echo -e "Host *\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
           
           # Deploy files
-          rsync -avz --delete dist/ carson@cartt.one:/usr/share/nginx/html
+          rsync -avz --delete dist/ carson@cartt.one:/home/carson/www/files
           
           # Restart Nginx
           ssh -i ~/.ssh/id_rsa carson@cartt.one "sudo systemctl reload nginx"

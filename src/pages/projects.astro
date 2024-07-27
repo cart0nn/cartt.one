@@ -7,13 +7,13 @@ import '../styles/tailwind.css'
 <Layout title="Projects | Carson Smith">
     <Navbar />
     <main>
-        <div class="text-white h-full px-5 flex flex-col mt-5 mb-5">
-            <div class="mx-auto w-full max-w-screen-lg h-full flex gap-5">
+        <div class="text-white h-full px-5 flex md:flex-row flex-col mt-5 mb-5">
+            <div class="mx-auto w-full max-w-screen-lg h-full flex flex-col md:flex-row gap-5">
                 <div class="flex-1 flex items-center justify-center text-blue-200 font-bold text-5xl">
                     Projects
                 </div>
                 <div class="border-l-4 border-white h-full mx-5" />
-                <div class="flex-1 flex items-center text-right justify-center italic text-xl">
+                <div class="flex-1 flex items-center text-center md:text-right justify-center italic text-xl">
                     Modern development is driven by projects. Be it project-based workflows in the office or pet projects at home, they are the universal top-level organization for creations of all kinds. In this page, I divide projects between "work"—projects for my job—and "play"—projects for fun and for learning.
                 </div>
             </div>
@@ -29,20 +29,50 @@ import '../styles/tailwind.css'
                 CS_Squared projects I've been involved in:
             </div>
             <ul class="text-center text-xl text-white">
-                <li><a href="https://cs-squared.org" class="text-blue-400 underline">cs-squared.org</a></li>
-                <li><a href="https://codermerlin.academy" class="text-blue-400 underline">codermerlin.academy</a></li>
-                <li><a href="https://cs-squared.org/webdev/index.html" class="text-blue-400 underline">CS_Squared Web Development</a></li>
+                <li><a href="https://cs-squared.org" class="text-blue-400 underline hover:text-blue-500">cs-squared.org</a></li>
+                <li><a href="https://codermerlin.academy" class="text-blue-400 underline hover:text-blue-500">codermerlin.academy</a></li>
+                <li><a href="https://cs-squared.org/webdev/index.html" class="text-blue-400 underline hover:text-blue-500">CS_Squared Web Development</a></li>
                 <li>CS_Squared Fleet Manager</li>
+                <li>CS_Squared Internal Documentation</li>
             </ul>
 
             <div class="flex-1 flex w-full mt-3 justify-center font-bold text-4xl text-blue-200">
-                Works
+                Play
             </div>
-            <div class="text-white flex-1 w-full italic flex justify-center text-xl">
-                N/A at the moment. Working on re-uploading work.
+            <div class="text-white flex-1 w-full flex text-center justify-center text-xl">
+                For the most part, my hobby projects revolve around data management, although I'm planning to contribute to some open source project backends in the future.
             </div>
-            <div class="mx-auto flex-1 flex w-full justify-center font-bold text-4xl text-blue-200">
-
+            <div class="text-white flex-1 w-full flex text-center justify-center text-xl mt-3">
+                It's pretty sparse, but there's a project directory, with names, summaries, tech stacks, and a GitHub link if available.
+            </div>
+            <div class="flex justify-center w-full">
+                <table class="text-white text-center text-xl border-separate border-spacing-x-10 mt-3 mb-10">
+                    <tr class="font-bold">
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>GitHub</th>
+                    </tr>
+                    <tr>
+                        <td>cartt.one</td>
+                        <td>This website, which acts as a digital portfolio. It also acts as a demonstration of my aptitude in both web development and web hosting.</td>
+                        <td><a href="https://github.com/cart0nn/cartt.one" class="text-blue-400 underline hover:text-blue-500">github.com/cart0nn/cartt.one</a></td>
+                    </tr>
+                    <tr>
+                        <td>LaTeX Resume</td>
+                        <td>By rewriting my resume entirely in LaTeX, I had access superb control in formatting and layout. This allowed me to create a compact yet readable resume. (Thanks to Jake's Resume).</td>
+                        <td><a href="https://github.com/cart0nn/latex-resume" class="text-blue-400 underline hover:text-blue-500">github.com/cart0nn/latex-resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>NASA HUNCH Medical Inventory Database</td>
+                        <td>Utilizing SQLite and Python, I programmed a database system to be ran on a Raspberry Pi alongside a set of automated stock detection systems.</td>
+                        <td><a href="https://github.com/cart0nn/nasa-hunch-med-inventory-db" class="text-blue-400 underline hover:text-blue-500">github.com/cart0nn/nasa-hunch-med-inventory-db</a></td>
+                    </tr>
+                    <tr>
+                        <td>Petrophysics Inc. Catalog Modernization</td>
+                        <td>The well log catalog of Petrophysics Inc. is currently a set of downloadable Excel spreadsheets. In this project, I've aimed to turn these spreadsheets into a database, which will be served to a webapp on the Petrophysics website.</td>
+                        <td>n/a</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </main>

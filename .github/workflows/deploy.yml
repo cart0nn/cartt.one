@@ -44,4 +44,4 @@ jobs:
           rsync -avz --delete dist/ carson@cartt.one:/home/carson/www/files
           
           # Restart Nginx
-          ssh -i ~/.ssh/id_rsa carson@cartt.one "sudo systemctl reload nginx"
+          sshpass -p "$SUDO_PASSWORD" ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa carson@cartt.one "echo $SUDO_PASSWORD | sudo -S systemctl restart nginx"

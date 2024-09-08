@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import '../styles/tailwind.css'
+---
+
+<Layout title="Academics | Carson Smith">
+    <Navbar />
+    <div class="flex flex-col w-full max-w-screen-lg my-5 mx-auto">
+        <div class ="flex-1 flex justify-center text-blue-200 font-bold mb-5 text-5xl">
+            Academics
+        </div>
+        <div class="flex-1 flex text-center justify-center text-white font-bold mb-5 text-xl">
+            This is a summary of my coursework and academic highlights during my time pursuing a B.S. in Computer Information Systems and Technology (CIS Tech).
+        </div>
+        <div class="flex-1 flex text-left text-white mb-3 text-xl">
+            In-Progress Courses:
+        </div>
+        <div class="flex-1 flex text-left text-white font-bold">
+            ITSS 3311 - Introduction to Programming
+        </div>
+        <div class="flex-1 flex text-left text-white italic">
+            Prof. Masudal Khan
+        </div>
+        <div class="flex-1 flex text-left mt-3 mb-5 text-white">
+            ITSS 3311 is an intro-level programming class within the CIS Tech department. It is taught in Java. A GitHub repo of class projects is&nbsp;<a class="text-blue-300 underline hover:text-blue-500" href="https://github.com/cart0nn/itss3311">here.</a>
+        </div>
+    </div>
+</Layout>

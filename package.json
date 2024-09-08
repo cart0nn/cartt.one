@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.2",
-    "@astrojs/react": "^3.6.0",
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/react": "^3.6.2",
     "@astrojs/tailwind": "^5.1.0",
     "@cypress/request": "^3.0.1",
-    "astro": "^4.12.2",
+    "astro": "^4.15.4",
     "astro-navbar": "^2.3.3",
     "express": "^4.19.2",
     "react-icons": "^5.2.1",

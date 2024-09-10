@@ -7,6 +7,6 @@ const GithubIcon = () => {
             <FaGithub className="text-4xl text-white hover:text-gray-500 transition-colors duration-200"/>
         </a>
     )
-}
+};
 
 export default GithubIcon;

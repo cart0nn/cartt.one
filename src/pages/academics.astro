@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro'
+import {CourseCard} from '../components/CourseCard.tsx'
+import {courses} from '../util/Courses'
 import '../styles/tailwind.css'
 ---
 
@@ -16,14 +18,8 @@ import '../styles/tailwind.css'
         <div class="flex-1 flex text-left text-white mb-3 text-xl">
             In-Progress Courses:
         </div>
-        <div class="flex-1 flex text-left text-white font-bold">
-            ITSS 3311 - Introduction to Programming
-        </div>
-        <div class="flex-1 flex text-left text-white italic">
-            Prof. Masudal Khan
-        </div>
-        <div class="flex-1 flex text-left mt-3 mb-5 text-white">
-            ITSS 3311 is an intro-level programming class within the CIS Tech department. It is taught in Java. A GitHub repo of class projects is&nbsp;<a class="text-blue-300 underline hover:text-blue-500" href="https://github.com/cart0nn/itss3311">here.</a>
-        </div>
+        {courses.map((course, i) => {
+            return <CourseCard course={course} key={i}/>
+        })}
     </div>
 </Layout>

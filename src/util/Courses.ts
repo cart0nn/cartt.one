@@ -17,6 +17,12 @@ export const courses: Course[] = [
         name: "IT for Business",
         professor: "Sean Owens",
         description: "ITSS 3300 is a course that covers the theoretical essentials of leading and managing Information Technology and Information Systems essentials in a business."
+    },
+    {
+        number: "OPRE 3333",
+        name: "Quantitative Business Analysis",
+        professor: "Monica Brussolo",
+        description: "OPRE 3333 covers making quantitative decisions and processing business statistics with linear algebra and using Microsoft Excel to perform these operations."
     }
 
 

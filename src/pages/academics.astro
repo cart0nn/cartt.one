@@ -18,8 +18,8 @@ import '../styles/tailwind.css'
         <div class="flex-1 flex text-left text-white mb-3 text-xl">
             In-Progress Courses:
         </div>
-        {courses.map((course, i) => {
-            return <CourseCard course={course} key={i}/>
+        {courses.map((course) => {
+            return <CourseCard course={course}/>
         })}
     </div>
 </Layout>

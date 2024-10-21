@@ -15,7 +15,7 @@ import LinkedinIcon from '../components/LinkedinIcon.tsx'
 				</div>
 				<h1 class="text-4xl md:text-6xl font-bold text-center text-white mb-3">Carson Smith</h1>
 				<script>
-					document.addEventListener('DOMContentLoaded', () => {
+					setTimeout( () => {
 						const messages = [
 							'"Me when the uhhh... when the uh... the uh... the..."',
 							'"It\'s always DNS."',
@@ -37,7 +37,7 @@ import LinkedinIcon from '../components/LinkedinIcon.tsx'
 
 						const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 						document.getElementById('random-text').innerText = randomMessage;
-					});
+					}, 0);
 
 				</script>
 				<div id="random-text" class="text-xl md:text-3xl italic text-center text-blue-100 mb-3"></div>

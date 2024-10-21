@@ -3,6 +3,28 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/tailwind.css'
 import GithubIcon from '../components/GithubIcon.tsx'
 import LinkedinIcon from '../components/LinkedinIcon.tsx'
+
+const messages = [
+	'"Me when the uhhh... when the uh... the uh... the..."',
+	'"It\'s always DNS."',
+	'"Real men test on prod."',
+	'"It works on my machine!"',
+	'"You\'re on call tonight."',
+	'"There’s no place like 127.0.0.1."',
+	'"This is fine."',
+	'"In theory, theory and practice are the same. In practice, they are not."',
+	'"I think, therefore I am."',
+	'git commit -m \'did a thing\'',
+	'"Google wrote more of my code than me."',
+	'"Oh, you fixed it? What did you break instead?"',
+	'"Comment your code!"',
+	'"Let’s just comment that out and pretend it never happened."',
+	'git push --force',
+	'git reset --hard HEAD'
+];
+
+const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
 ---
 
 <Layout title="Carson Smith">
@@ -14,7 +36,7 @@ import LinkedinIcon from '../components/LinkedinIcon.tsx'
 				</div>
 				<h1 class="text-4xl md:text-6xl font-bold text-center text-white mb-3">Carson Smith</h1>
 				<div class="text-xl md:text-3xl italic text-center text-blue-100 mb-3">
-					"Me when the uhhh... when the uh... the uh... the..."
+					{randomMessage}
 				</div>
 				<div class="flex flex-col justify-center items-center mb-3">
 					<nav class="space-x-4 flex justify-center mx-3 items-center">

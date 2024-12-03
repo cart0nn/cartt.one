@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.astro'
 import {CourseCard} from '../components/CourseCard.tsx'
 import {courses} from '../util/Courses'
 import '../styles/tailwind.css'
+import React from "react";
 ---
 
 <Layout title="Academics | Carson Smith">
@@ -21,5 +22,11 @@ import '../styles/tailwind.css'
         {courses.map((course) => {
             return <CourseCard course={course}/>
         })}
+        <div class="flex-1 flex text-left text-white mb-3 text-xl">
+            Major Projects:
+        </div>
+        <div class="flex-1 flex text-left mb-5 text-white">
+            <a class="text-blue-400 underline hover:text-blue-500" href="https://portfolio.cartt.one/" target="_blank" rel="noopener noreferrer">BCOM 1300 Portfolio</a>
+        </div>
     </div>
 </Layout>
